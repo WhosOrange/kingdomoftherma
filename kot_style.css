@@ -1,0 +1,157 @@
+/*
+* Kingdom of Therma CSS Style Sheet
+* By Derek 
+* 
+*/
+
+/* Main Body Style */
+body {
+	background-color: rgb(100, 170, 200);
+	font-family: Bookman Old Style, Times;
+	font-size: 20px;
+	background-image: url('img/kot_bg.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#mainDiv {
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 80%; 
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	box-shadow: 2px 4px 1px black;
+}
+
+/* Header Image */
+#siteBanner {
+	text-align: center;
+	height: 128px;
+	border: 2px solid black;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+	box-shadow: 0px 4px 2px black;
+}
+
+/* Navigation Bar */
+#navBar {
+	text-align: center;
+}
+
+#navTitle {
+	color: #33aaff;
+	font-size: 32px;
+	text-shadow: 2px 2px 0px black;
+}
+
+#navText {
+	font-family: "Mortal Kombat 4", Arial; 
+	color: white; 
+	text-shadow: 0px 0px 2px black;
+	transition-duration: 0.2s;
+}
+
+.navButton {
+	font-size: 40px;
+	text-align: center;
+	border: 2px solid black;
+	width: 64px;	/* width should be the same as the button image */
+	height: 64px;	/* height should be the same as the button image */
+	transition-duration: 0.2s;
+	padding: 2px;
+	background-color: #ffffff;
+}
+
+.navButton:hover {
+	background-color: #000000;
+	text-shadow: 0px 0px 9px white;
+	border-radius: 32px;
+}
+
+.navButton:active {
+	background-color: white;
+}
+
+
+/* Main Content Styles */
+#zaContent {
+	margin-left: auto;
+	margin-right: auto;
+	border: 3px ridge black;
+	background-color: rgba(124, 200, 256, 0.7);
+	box-shadow: 2px 4px 1px black;
+}
+
+#zaContent h3 {
+	color: rgba(20, 50, 100, 0.9);
+	padding-left: 1%;
+	padding-right: 1%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+
+#zaContent p {
+	text-shadow: 1px 1px 0px rgba(10, 70, 120, 0.7);
+	padding-left: 5%;
+	padding-right: 1%;
+	padding-top: 1%;
+	padding-bottom: 2%;
+}
+
+#zaContent img {
+	border: 3px ridge  rgba(10, 70, 120, 0.7);
+	box-shadow: 3px 3px 2px rgba(10, 70, 120, 0.7);
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+#zaContent h4 {
+	font-size: 20px;
+	padding: 4px;
+	font-style: italic;
+	text-align: center;
+	font-weight: normal;
+}
+
+#zaContent h4 b {
+	font-weight: bold;
+}
+
+.imgLeft {
+	margin-left: 1%;
+	margin-right: 66%;
+}
+
+.imgRight {
+	margin-left: 66%;
+	margin-right: 1%;
+}
+
+.txtLeft {
+	display: block;
+	margin-right: 56%;
+	margin-left: 1%
+}
+
+.txtRight {
+	display: block;
+	margin-left: 56%;
+	margin-right: 1%
+}
+
+/* Small Screens */
+@media screen and (max-width: 320px) {
+	#zaContent {
+		font-size: 17px;
+	}
+	
+	#navTitle {
+		font-size: 20px;
+	}
+	
+}
