@@ -75,6 +75,31 @@ body {
 	background-color: white;
 }
 
+#navHome {
+	background-image: url('img/nav_thistle.png');
+}
+
+#navHistory {
+	background-image: url('img/nav_cata.png');
+}
+
+#navMap {
+	background-image: url('img/nav_map.png');
+}
+
+#navSim {
+	background-image: url('img/nav_turtle.png');
+}
+
+#navFAQ {
+	background-image: url('img/nav_owl.png');
+}
+
+#navMisc {
+	background-image: url('img/nav_woods.png');
+}
+
+
 
 /* Main Content Styles */
 #zaContent {
@@ -142,6 +167,20 @@ body {
 	display: block;
 	margin-left: 56%;
 	margin-right: 1%
+}
+
+/* Map display */
+#mapImg {
+	width: auto;
+	height: auto;
+	border: none;
+}
+
+#mapDisplay {
+	font-family: "Mortal Kombat 4", Arial; 
+	color: white; 
+	text-shadow: 0px 0px 2px black;
+	transition-duration: 0.2s;
 }
 
 /* Small Screens */
