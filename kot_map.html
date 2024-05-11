@@ -1,11 +1,11 @@
 <html>
 <head>
-	<title>History | The Kingdom of Therma</title>
-	
+	<title>Map | The Kingdom of Therma</title>
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta charset="utf-8"/>
 	
-	<link rel="icon" type="image/png" href="kot_hibi.png"/>
+	<link rel="icon" type="image/png" href="img/kot_hibi.png"/>
 	<link href="kot_style.css" rel="stylesheet"/> 
 	
 </head>
@@ -16,34 +16,40 @@
 	</div>
 	
 	<div id="navBar">
-		<!-- 
-		Home:
-		Kingdom History: 
-		Map: 
-		FAQs: 
-		Simulation: 
-		Misc: 
-		
-		used to be chooseme(navIndex);
-		-->
 		<h2 id="navTitle">Navigation</h2>
-		<button class="navButton" id="navHome" onmouseleave="navBarHover(10);" onmouseover="navBarHover(0);" onclick="document.location='kot_index.html'">&#x1F3E0</button>
-		<button class="navButton" id="navHistory" onmouseleave="navBarHover(10);" onmouseover="navBarHover(1);" onclick="document.location='kot_history.html'">&#x1F631</button>
-		<button class="navButton" id="navMap" onmouseleave="navBarHover(10);" onmouseoverr="navBarHover(2);" onclick="document.location='kot_map.html'">&#x1F3B7</button>
-		<button class="navButton" id="navFAQ" onmouseleave="navBarHover(10);" onmouseover="navBarHover(3);" onclick="document.location='kot_faq.html'">&#x1F3AE</button>
-		<button class="navButton" id="navSim" onmouseleave="navBarHover(10);" onmouseover="navBarHover(4);" onclick="document.location='kot_sim.html'">&#x1F3A4</button>
-		<button class="navButton" id="navMisc" onmouseleave="navBarHover(10);" onmouseover="navBarHover(5);" onclick="document.location='kot_misc.html'">&#x1F31F</button>
+		<button class="navButton" id="navHome" onmouseleave="navBarHover(10);" onmouseover="navBarHover(0);" onclick="document.location='kot_index.html'"></button>
+		<button class="navButton" id="navHistory" onmouseleave="navBarHover(10);" onmouseover="navBarHover(1);" onclick="document.location='kot_history.html'"></button>
+		<button class="navButton" id="navMap" onmouseleave="navBarHover(10);" onmouseover="navBarHover(2);" onclick="document.location='kot_map.html'"></button>
+		<button class="navButton" id="navFAQ" onmouseleave="navBarHover(10);" onmouseover="navBarHover(3);" onclick="document.location='kot_faq.html'"></button>
+		<button class="navButton" id="navSim" onmouseleave="navBarHover(10);" onmouseover="navBarHover(4);" onclick="document.location='kot_sim.html'"></button>
+		<button class="navButton" id="navMisc" onmouseleave="navBarHover(10);" onmouseover="navBarHover(5);" onclick="document.location='kot_misc.html'"></button>
 		<p id="navText"></p>
 	</div>
 	
 	<div id="zaContent">
 		<h3>Map Of The Kingdom</h3>
 		
-		<img src="kot_map.png" usemap="kot_map">
-		<area id="kot_map">
-			
-		</area>
+		<p id="mapDisplay"></p>
+		<br>
+		<img id="mapImg" src="img/kot_map.png" usemap="#kot_map" style="width: auto;">
+		<map id="kot_map">
+			<area shape="rect" alt="Therma Woods Temple" coords="61,82,93,110" onmouseover="mapHover(1);" onmouseleave="mapHover(10);">
+			<area shape="rect" alt="Therma River" coords="92,72,197,133" onmouseover="mapHover(2);" onmouseleave="mapHover(10);">
+			<area shape="rect" alt="Therma Castle and Township" coords="204,85,246,120" onmouseover="mapHover(0);" onmouseleave="mapHover(10);">
+			<area shape="rect" alt="Volcanic Fields" coords="256,64,327,224" onmouseover="mapHover(3);" onmouseleave="mapHover(10);">
+			<area shape="rect" alt="Maze Lake" coords="53,142,108,168" onmouseover="mapHover(4);" onmouseleave="mapHover(10);">
+			<area shape="rect" alt="MAZE HQ" coords=" 112,151,132,172" onmouseover="mapHover(5);" onmouseleave="mapHover(10);">
+			<area shape="rect" alt="Therma Sea" coords="11,207,231,293" onmouseover="mapHover(6);" onmouseleave="mapHover(10);">
+			<area shape="rect" alt="Orph Territotry" coords=" 252,244,321,286" onmouseover="mapHover(7);" onmouseleave="mapHover(10);">
+		</map>
+		<br>
+		<br>
 		
+		<br>
+		<p>By the way, if you'd like to see a micro journey through the <i>Therma River upstream</i>, there is <b>video</b> of rendered map.</p>
+		<video width="320" height="240" controls>
+			<source src="img/kot_map.mp4" type="video/mp4">
+		</video>
 	</div>
 	</div>
 	
